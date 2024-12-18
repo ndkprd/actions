@@ -14,8 +14,6 @@ on:
     secrets:
       galaxy_api_key:
         required: true
-      github_token:
-        required: true
 
 jobs:
   release-to-galaxy:

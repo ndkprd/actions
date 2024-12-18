@@ -33,7 +33,6 @@ jobs:
           release_tag: ${{ github.ref_name }}
         secrets:
           galaxy_api_key: ${{ secrets.GALAXY_API_KEY }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
 
 ```
 
