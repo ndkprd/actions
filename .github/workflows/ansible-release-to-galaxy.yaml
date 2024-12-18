@@ -9,7 +9,7 @@ on:
         required: true
         type: string
     secrets:
-      github_token:
+      repo_token:
         required: true
       galaxy_api_key:
         required: true
@@ -25,7 +25,7 @@ jobs:
       - name: Create a new release.
         uses: marvinpinto/action-automatic-releases@latest
         with:
-          repo_token: ${{ secrets.github_token }}
+          repo_token: ${{ secrets.repo_token }}
           automatic_release_tag: ${{ inputs.github_release_tag }}
           prerelease: false
           title: "Release ${{ inputs.github_release_tag }}"
