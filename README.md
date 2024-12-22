@@ -6,7 +6,7 @@ A centralized collection of my personal Github/Gitea actions.
 
 ### Description
 
-Github/Gitea Action to release [Ansible](https://ansible.com/) to [Ansible Galaxy](https://galaxy.ansible.com).
+Github/Gitea Action to release [Ansible](https://ansible.com/) role to [Ansible Galaxy](https://galaxy.ansible.com).
 
 What it does:
 - do `git checkout`;
@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Release to Ansible Galaxy.
-        uses: ndkprd/actions/.github/workflows/ansible-release-to-galaxy.yaml@main
+        uses: ndkprd/actions/ansible/ansible-release-to-galaxy.yaml@main
         with:
           release_tag: ${{ github.ref_name }}
         secrets:
