@@ -19,7 +19,7 @@ jobs:
       # Debug directory structure.
       - name: List current files structure.
         run: |
-          apt-get install -y tree
+          sudo apt-get install -y tree
           tree .
       # push to Ansible Galaxy.
       - name: Set up Python 3.
