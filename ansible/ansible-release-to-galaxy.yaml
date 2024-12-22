@@ -4,13 +4,8 @@ name: Release to Ansible Galaxy.
 
 on:
   workflow_call:
-    inputs:
-      github_release_tag:
-        required: true
-        type: string
+    inputs: {}
     secrets:
-      repo_token:
-        required: true
       galaxy_api_key:
         required: true
 
