@@ -17,10 +17,10 @@ jobs:
       - name: Checkout repository.
         uses: actions/checkout@v4
       # Debug directory structure.
-      - name: List current files structure.
-        run: |
-          sudo apt-get install -y tree
-          tree .
+      # - name: List current files structure.
+      #   run: |
+      #     sudo apt-get install -y tree
+      #     tree .
       # push to Ansible Galaxy.
       - name: Set up Python 3.
         uses: actions/setup-python@v5
